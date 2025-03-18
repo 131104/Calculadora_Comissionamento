@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Comissão</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Calculadora de Comissão</h2>
+
+        <label for="data">Data:</label>
+        <input type="text" id="data" disabled>
+
+        <label for="valor">Valor da Conta: (Exemplo: 500.25)</label>
+        <input type="number" id="valor">
+
+        <label for="anos">Tipo da Proposta:</label>
+        <select id="anos">
+            <option value="0">Liberdade Total</option>
+            <option value="3">3 anos</option>
+            <option value="5">5 anos </option>
+        </select>
+
+        <label for="plano">Plano:</label>
+        <select id="plano">
+            <option value="Premium">Premium</option>
+            <option value="Max">Max</option>
+        </select>
+
+        <button id="calcular">Calcular</button>
+        <button id="limpar">Limpar</button>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
